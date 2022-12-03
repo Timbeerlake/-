@@ -1,10 +1,4 @@
 let num = 266219;
-let array = ("" + num).split("").map(Number).reduce((acc, rec) => acc * rec);
-console.log(array);
-let array2 = array**3;
-console.log(String(array2).slice(0, 2));
-
-
-
-
-
+console.log(("" + num) .split("").map(Number).reduce((acc, rec) => acc * rec));
+let num2 = 1296** 3;
+console.log(String(num2).slice(0, 2));
