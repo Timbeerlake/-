@@ -18,8 +18,23 @@ if (lang == "ru") {
 console.log(arr);
 
 
+switch (lang) {
+  case "ru" : 
+    console.log(["пн", "вт", "ср", "чт", "пт", "сб", "вс"]);
+  case "en" :
+    console.log(["mn", "ts", "wd", "th", "fr", "st", "sn"]);
+}
+
+lang_array = [];
+lang_array["ru"] = ["Пн", "Вт", "СР", "Чт", "Пт", "Сб", "Вс"];
+lang_array["en"] = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+console.log(lang_array["ru"]);
+console.log(lang_array["en"]);
+
+
+
+
 let namePerson = prompt("имя")
 
-namePerson = "Артем" ? "директор" : "студент";
-namePerson = "Александр" ? "преподователь" : "студент";
-console.log(namePerson)
+console.log(namePerson === "Артем" ? "директор" : "студент");
+console.log(namePerson === "Александр" ? "преподователь" : "студент")
